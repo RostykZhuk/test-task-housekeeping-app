@@ -1,0 +1,28 @@
+@import "../../styles/mixins/";
+
+.task-list {
+  max-width: 800px;
+  margin: 0 auto;
+
+  &__title {
+    font-size: 30px;
+    margin: 26px 0px;
+  }
+
+  &__item {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    grid-auto-flow: row;
+
+    @include respond-to("xs") {
+      grid-template-columns: 1fr;
+    }
+  }
+}

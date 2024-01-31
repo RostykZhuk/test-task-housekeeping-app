@@ -1,0 +1,38 @@
+@import "./styles/variables";
+
+:root {
+  font-family: Georgia, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 16px;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(to right, $primary-background-color, lighten($primary-background-color, 5%), $primary-background-color, darken($primary-background-color, 8%));
+  color: $text-primary-color;
+}
+
+#root {
+  flex: 1;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.scheduler-page {
+  &__title {
+    font-size: 40px;
+    color: $text-primary-color;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 6px 6px 8px rgba(0, 0, 0, 1);
+  }
+}

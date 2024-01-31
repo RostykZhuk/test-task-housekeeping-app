@@ -1,0 +1,16 @@
+@import '../../styles/variables/';
+
+.housekeeper-item {
+    background-color: $secondary-background-color;
+    border: 1px solid $text-secondary-color;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  
+    &__name {
+      margin: 0;
+      font-size: 16px;
+      color: $text-primary-color;
+    }
+  }
+  
